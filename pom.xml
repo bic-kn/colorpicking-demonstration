@@ -8,17 +8,17 @@
 		<version>17.0.0</version>
 	</parent>
 
-	<groupId>net.imagej</groupId>
-	<artifactId>legacy-update-bug-mcve</artifactId>
+	<groupId>kn.uni.bic</groupId>
+	<artifactId>colorpicking-demonstration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>legacy-update-bug-mcve</name>
-	<description>A MCVE to show that legacy ImageWindows are not properly updated.</description>
-	<url>-</url>
+	<name>RGB Colorpicker Demonstration</name>
+	<description>A simple command that demonstrates how challenging RGB color picking is vs HSV color picking.</description>
+	<url>None</url>
 	<inceptionYear>2017</inceptionYear>
 	<organization>
-		<name>Stefan Helfrich</name>
-		<url>https://github.com/stelfrich</url>
+		<name>Bioimaging Center, University of Konstanz</name>
+		<url>https://bioimagingcenter.uni.kn/</url>
 	</organization>
 	<licenses>
 		<license>
@@ -28,7 +28,6 @@
 	</licenses>
 
 	<developers>
-		<!-- See https://imagej.net/Team -->
 		<developer>
 			<id>stelfrich</id>
 			<name>Stefan Helfrich</name>
@@ -59,24 +58,24 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/stelfrich/legacy-update-bug-mcve</connection>
-		<developerConnection>scm:git:git@github.com:stelfrich/legacy-update-bug-mcve</developerConnection>
+		<connection>scm:git:git://github.com/bic-kn/colorpicking-demonstration</connection>
+		<developerConnection>scm:git:git@github.com:bic-kn/colorpicking-demonstration</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/stelfrich/legacy-update-bug-mcve</url>
+		<url>https://github.com/bic-kn/colorpicking-demonstration</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/stelfrich/legacy-update-bug-mcve/issues</url>
+		<url>https://github.com/bic-kn/colorpicking-demonstration/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>net.imagej</package-name>
-		<main-class>net.imagej.MorphologicalFiltersMain</main-class>
+		<package-name>kn.uni.bic</package-name>
+		<main-class>kn.uni.bic.RGBColorpickerMain</main-class>
 		<license.licenseName>bsd_2</license.licenseName>
-		<license.copyrightOwners>Stefan Helfrich</license.copyrightOwners>
+		<license.copyrightOwners>University of Konstanz</license.copyrightOwners>
 	</properties>
 
 	<repositories>
@@ -92,15 +91,15 @@
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+
 		<!-- ImageJ2 -->
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>imagej</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>imagej-ops</artifactId>
 		</dependency>
 	</dependencies>
 </project>
